@@ -1,0 +1,28 @@
+{
+  "name": "typescript-study",
+  "version": "1.0.0",
+  "description": "typescript project",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc -w",
+    "server": "live-server --port=8082",
+    "start": "concurrently \"npm run tsc\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liutaochange/typescript-study.git"
+  },
+  "keywords": [
+    "typescript",
+    "js"
+  ],
+  "author": "liutaochange@163.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liutaochange/typescript-study/issues"
+  },
+  "homepage": "https://github.com/liutaochange/typescript-study#readme",
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
