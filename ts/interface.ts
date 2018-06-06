@@ -6,6 +6,8 @@ function printLabel(labelledObj: { label: string }) {
 let myObj = { size: 10, label: "Size 10 Object" };
 printLabel(myObj);
 
+//  定义参数里必须有label这个参数，并且类型为string
+
 interface LabelledValue {
     label: string;
 }
