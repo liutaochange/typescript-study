@@ -1,2 +1,4 @@
 var newname = 'welcome to beijing';
-console.log("" + newname);
+var newstr = 'this is a string';
+console.log(newname);
+console.log(newstr);
