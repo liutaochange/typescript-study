@@ -18,20 +18,6 @@ function greeter(person) {
 }
 var user = { firstName: "Jane", lastName: "User" };
 document.body.innerHTML = greeter(user);
-var Student = (function () {
-    function Student(firstName, middleInitial, lastName) {
-        this.firstName = firstName;
-        this.middleInitial = middleInitial;
-        this.lastName = lastName;
-        this.fullName = firstName + " " + middleInitial + " " + lastName;
-    }
-    return Student;
-}());
-function print(person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-var info = new Student("Jane", "M.", "User");
-console.log(print(info));
 var flag = false;
 console.log(flag);
 var str = 'i am best';

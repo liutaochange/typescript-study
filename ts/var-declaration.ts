@@ -62,6 +62,6 @@ function theCityThatAlwaysSleeps() {
     }
     return getCity();
 }
+// let声明和const声明
 let getcity = theCityThatAlwaysSleeps()
 console.log(getcity)
-// let声明和const声明

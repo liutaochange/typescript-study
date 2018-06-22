@@ -48,30 +48,6 @@ let user = { firstName: "Jane", lastName: "User" };
 
 document.body.innerHTML = greeter(user);
 
-/*
-* 类
-* 使用接口来描述一个拥有firstName和lastName字段的对象
-* */
-class Student {
-    fullName: string;
-    constructor(public firstName: any, public middleInitial: any, public lastName: any) {
-        this.fullName = firstName + " " + middleInitial + " " + lastName;
-    }
-}
-
-interface People {
-    firstName: string;
-    lastName: string;
-}
-
-function print(person : People) {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-
-let info = new Student("Jane", "M.", "User");
-
-console.log(print(info))
-
 // 基本数据类型定义
 // string, number, array
 let flag : boolean = false
