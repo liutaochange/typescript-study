@@ -50,12 +50,12 @@ function keepWholeObject(wholeObject) {
     console.log(b);
 }
 keepWholeObject(o);
-function f(_a) {
+function fdd(_a) {
     var a = _a.a, b = _a.b;
     console.log(a);
     console.log(b);
 }
-f(o);
+fdd(o);
 var arr1 = [1, 2];
 var arr2 = [3, 4];
 var bothPlus = [0].concat(arr1, arr2, [5]);

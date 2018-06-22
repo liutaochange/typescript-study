@@ -1,9 +1,9 @@
 var message = 10;
-function f() {
+function fzz() {
     var message = 'Hello, world!';
     return message;
 }
-console.log(f());
+console.log(fzz());
 function goo() {
     var a = 10;
     return function () {

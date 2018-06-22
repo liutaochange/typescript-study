@@ -54,13 +54,13 @@ function keepWholeObject(wholeObject: { a: string, b?: number }) {
 keepWholeObject(o)
 
 // 函数声明
-type C = { a: string, b?: number }
-function f({ a, b }: C): void {
+type Coo = { a: string, b?: number }
+function fdd({ a, b }: Coo): void {
     // ...
     console.log(a); // foo
     console.log(b); // 12
 }
-f(o)
+fdd(o)
 
 // 拓展运算符
 // 展开操作符正与解构相反。
