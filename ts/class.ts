@@ -83,3 +83,53 @@ class AnimalPrivate {
 }
 
 // new AnimalPrivate("Cat").name; // 错误: 'name' 是私有的. Property 'name' is private and only accessible within class 'AnimalPrivate'.
+
+
+// protected修饰符与 private修饰符的行为很相似，但有一点不同， protected成员在派生类中仍然可以访问
+// 我们不能在 PersonClass类外使用 name，但是我们仍然可以通过 Employee类的实例方法访问，因为 Employee是由 PersonClass派生而来的
+
+class PersonClass {
+  protected name: string;
+  constructor(name: string) { this.name = name; }
+}
+
+class Employee extends PersonClass {
+  private department: string;
+
+  constructor(name: string, department: string) {
+      super(name)
+      this.department = department;
+  }
+
+  public getElevatorPitch() {
+      return `Hello, my name is ${this.name} and I work in ${this.department}.`;
+  }
+}
+
+let howard = new Employee("Howard", "Sales");
+console.log(howard.getElevatorPitch());
+// console.log(howard.name); // 错误
+
+// 构造函数也可以被标记成 protected。 这意味着这个类不能在包含它的类外被实例化，但是能被继承。
+
+class PersonP {
+  protected name: string;
+  protected constructor(theName: string) { this.name = theName; }
+}
+
+// Employee 能够继承 Person
+class EmployeeP extends PersonP {
+  private department: string;
+
+  constructor(name: string, department: string) {
+      super(name);
+      this.department = department;
+  }
+
+  public getElevatorPitch() {
+      return `Hello, my name is ${this.name} and I work in ${this.department}.`;
+  }
+}
+
+let howardP = new EmployeeP("Howard", "Sales");
+// let john = new PersonP("John"); // 错误: 'PersonP' 的构造函数是被保护的.
