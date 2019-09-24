@@ -2,6 +2,7 @@
 
 /* 布尔值 */
 /* 最基本的数据类型就是简单的true/false值 */
+// 类型注解
 let isDone: boolean = false;
 if (!isDone) {
     console.log('i am boolean')
