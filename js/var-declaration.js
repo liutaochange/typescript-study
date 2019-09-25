@@ -15,38 +15,40 @@ var g = goo();
 console.log(g());
 for (var i = 0; i < 10; i++) {
     (function (i) {
-        setTimeout(function () { console.log(i); }, 100 * i);
+        setTimeout(function () {
+            console.log(i);
+        }, 100 * i);
     })(i);
 }
 function letFoo(input) {
-    var a = 100;
+    let a = 100;
     if (input) {
-        var b_1 = a + 1;
-        return b_1;
+        let b = a + 1;
+        return b;
     }
     return b;
 }
 console.log(letFoo(false));
 function sumMatrix(matrix) {
-    var sum = 0;
-    for (var i_1 = 0; i_1 < matrix.length; i_1++) {
-        var currentRow = matrix[i_1];
-        for (var i_2 = 0; i_2 < currentRow.length; i_2++) {
-            sum += currentRow[i_2];
+    let sum = 0;
+    for (let i = 0; i < matrix.length; i++) {
+        var currentRow = matrix[i];
+        for (let i = 0; i < currentRow.length; i++) {
+            sum += currentRow[i];
         }
     }
     return sum;
 }
 console.log(sumMatrix([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]]));
 function theCityThatAlwaysSleeps() {
-    var getCity;
+    let getCity;
     if (true) {
-        var city_1 = "Seattle";
+        let city = "Seattle";
         getCity = function () {
-            return city_1;
+            return city;
         };
     }
     return getCity();
 }
-var getcity = theCityThatAlwaysSleeps();
+let getcity = theCityThatAlwaysSleeps();
 console.log(getcity);
