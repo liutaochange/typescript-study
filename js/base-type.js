@@ -14,9 +14,9 @@ function welcome(place) {
 }
 console.log(welcome('北京'));
 function greeter(person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
+    return 'Hello, ' + person.firstName + ' ' + person.lastName;
 }
-let user = { firstName: "Jane", lastName: "User" };
+let user = { firstName: 'Jane', lastName: 'User' };
 document.body.innerHTML = greeter(user);
 let flag = false;
 console.log(flag);
@@ -40,9 +40,6 @@ let x;
 x = ['hello', 10];
 console.log(x);
 console.log(x[0]);
-x[6] = 10;
-x[7] = 'make';
-console.log(x[5]);
 console.log(x);
 var Color;
 (function (Color) {
@@ -55,14 +52,14 @@ console.log(c);
 let colorName = Color[4];
 console.log(colorName);
 let notSure = 4;
-notSure = "maybe a string instead";
+notSure = 'maybe a string instead';
 notSure = false;
 console.log(notSure);
-let list = [1, true, "free"];
+let list = [1, true, 'free'];
 list[1] = 100;
 console.log(list);
 function warnUser() {
-    alert("This is my warning message");
+    alert('This is my warning message');
 }
 let unusable = undefined;
 let u = undefined;
@@ -71,15 +68,14 @@ function error(message) {
     throw new Error(message);
 }
 function infiniteLoop() {
-    while (true) {
-    }
+    while (true) { }
 }
 function fail() {
-    return error("Something failed");
+    return error('Something failed');
 }
-let someValue = "this is a string";
+let someValue = 'this is a string';
 let strLength = someValue.length;
 console.log(strLength);
-let secondValue = "this is second string";
+let secondValue = 'this is second string';
 let secondLength = secondValue.length;
 console.log(secondLength);
